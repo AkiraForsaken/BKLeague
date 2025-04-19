@@ -371,9 +371,12 @@ const Teams = () => {
 
   return (
     <Routes>
-      <Route path="/" element={<TeamList teams={teams} loading={loading} error={error} />} />
-      <Route path=":team_name" element={<TeamDetails />} />
-      <Route path=":team_name/members/:com_id" element={<MemberDetails />} />
+      <Route path="/" 
+      element={<TeamList teams={teams} loading={loading} error={error} />} />
+      <Route path=":team_name" 
+      element={<TeamDetails />} />
+      <Route path=":team_name/members/:com_id" 
+      element={<MemberDetails />} />
     </Routes>
   );
 };
